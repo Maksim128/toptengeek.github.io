@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Rammetto+One');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	font-family: Anton, sans-serif;
+	background-color: #717171;
+	background-image: "../img/bg.jpg";
+}
+
+body {
+   background-image: url(../img/bg.jpg); /* выходим из папки css на уровень вверх, и заходим в папку img */
+}
+
+.bg{
+	position: fixed;
+	height: auto;
+	width: 100%;
+}
+
+.bg{
+	margin-right: 10px;
+	background-position: right top;
+}
+
+.qw{
+	font-size: 27px;
+}
+
+#nav{
+	padding-top: 40px;
+	margin-left: 170px;
+	opacity: 0.85;
+}
+
+#nav li{
+	float: left;
+	position: relative;
+	list-style: none;
+	background-color: #FF8037;
+	width: 240px;
+	text-align: center;
+}
+
+#nav a{
+	text-decoration: none;
+	display: block;
+	padding: 35px 65px;
+	color: #ffffff;
+}
+
+#active a, #nav li:hover > a{
+	background-color: #FF8037;
+}
+
+#nav ul{
+	visibility: hidden;
+	padding: 0;
+	position: absolute;
+}
+
+#nav li:hover >ul{
+	visibility: visible;
+	position: relative;
+}
+
+#nav ul a{
+	padding: 18.5px 65px;
+}
+
+#nav ul li:hover{
+	background-color: #FF8037;
+}
+
+#nav li:first-child:hover > ul{
+	left: 0;
+}
+
+#nav > li{
+	border-right: 2px solid #FF9B52;
+}
+
+#nav > li:last-child{
+	border-right: none;
+}
+
+#nav > li ul li{
+	border-left: 2px solid #FC7D34;
+	border-right: 2px solid #FC7D34;
+}
+
+#nav li:first-child ul li, #nav li:first-child ul{
+	border-left: none;
+}
+
+#nav li:last-child ul li, #nav li:last-child ul{
+	border-left: none;
+}
+
+
+/* Content */
+
+
+
+/* Footer */
+
+
+footer{
+	position: fixed;
+  	left: 0;
+  	bottom: 0;
+  	height: 35px;
+	width: 98%;
+	float: left;
+	padding: 1%;
+	background-color: #fafafa;
+	border-top:2px solid silver;
+	margin-top:10px;
+	display: block;
+	overflow: hidden;
+	opacity: 0.85;
+}
+
+footer #social {
+	float: left;
+	width: 50%;
+}
+
+footer #social img{
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-right: 10px;
+}
+
+footer #rights{
+	float: right;
+	width: 50%;
+	text-align: right;
+	font-size:1.1em;
+}
